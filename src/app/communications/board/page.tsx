@@ -1,24 +1,26 @@
-import Link from "next/link";
-
-export default function BoardPage() {
+export default function CommunicationsBoardPage() {
     return (
         <main className="flex flex-col min-h-screen">
-            <section className="bg-slate-100 py-12">
+            <section className="bg-[#001F3F] py-20 text-white">
                 <div className="container mx-auto px-4">
-                    <nav className="flex mb-4 text-sm text-slate-500">
-                        <Link href="/" className="hover:text-navy">Home</Link>
-                        <span className="mx-2">&gt;</span>
-                        <Link href="/communications" className="hover:text-navy">Communications</Link>
-                        <span className="mx-2">&gt;</span>
-                        <span className="font-bold text-navy">Board</span>
-                    </nav>
-                    <h1 className="text-3xl font-bold text-navy">자유게시판</h1>
+                    <h1 className="text-4xl font-bold md:text-5xl">자유게시판</h1>
+                    <p className="mt-4 text-slate-300">누구나 자유롭게 의견을 나누는 공간입니다.</p>
                 </div>
             </section>
-            <section className="py-20 container mx-auto px-4">
-                <div className="bg-white border rounded-2xl p-20 text-center">
-                    <p className="text-slate-500 mb-6">게시판 서비스 점검 중입니다.</p>
-                    <Link href="/communications" className="inline-block px-6 py-2 border rounded-full text-sm">뒤로가기</Link>
+
+            <section className="py-20 bg-white">
+                <div className="container mx-auto px-4 max-w-5xl">
+                    <div className="bg-slate-50 p-12 rounded-3xl border border-dashed text-center">
+                        <div className="text-5xl mb-6">📝</div>
+                        <h3 className="text-2xl font-bold text-[#001F3F] mb-4">게시판 준비 중</h3>
+                        <p className="text-slate-500 mb-8">
+                            더욱 안전하고 쾌적한 커뮤니티 환경을 위해 회원 시스템 및 게시판 기능을 정비 중입니다.
+                            조금만 기다려 주세요!
+                        </p>
+                        <button className="bg-[#001F3F] text-white px-8 py-3 rounded-full font-bold opacity-50 cursor-not-allowed">
+                            글쓰기 (준비중)
+                        </button>
+                    </div>
                 </div>
             </section>
         </main>

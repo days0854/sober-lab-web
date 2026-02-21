@@ -1,0 +1,21 @@
+{
+  "home": {
+    "hero": {
+      "title": "술 권하는 사회, <span class=\"text-amber-400\">통제</span>가 필요합니다!",
+      "description": "올바른술문화연구소와 함께 걱정없이 한잔해요!"
+    },
+    "business": {
+      "title": "주요 활동 분야",
+      "subtitle": "연구소는 건전하고 안전한 술문화를 만들기 위해 다양한 공익 사업과 솔루션을 제공합니다."
+    }
+  },
+  "footer": {
+    "taxId": "311-82-79306",
+    "orgName": "올바른술문화연구소"
+  },
+  "inquiries": [],
+  "volunteerStatus": [
+    { "id": 1, "title": "서초구 야간 안전귀가 도우미", "status": "recruiting", "count": 12 },
+    { "id": 2, "title": "강남역 건전음주 캠페인즈", "status": "closed", "count": 8 }
+  ]
+}

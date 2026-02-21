@@ -22,14 +22,15 @@ export default function RootLayout({
         <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
           <div className="container mx-auto flex h-20 items-center justify-between px-4">
             <Link href="/" className="flex items-center gap-2">
-              <Image
-                src="/logo.png"
-                alt="올바른 술문화 연구소"
-                width={150}
-                height={50}
-                className="h-12 w-auto object-contain"
-                priority
-              />
+              <div className="relative h-12 w-48">
+                <Image
+                  src="/logo.png"
+                  alt="올바른 술문화 연구소"
+                  fill
+                  className="object-contain object-left"
+                  priority
+                />
+              </div>
             </Link>
             <nav className="hidden space-x-8 md:flex font-semibold">
               <Link href="/about" className="hover:text-amber-600 transition-colors">About</Link>
@@ -45,6 +46,7 @@ export default function RootLayout({
         {children}
         <footer className="w-full border-t bg-slate-50 py-12">
           <div className="container mx-auto px-4 text-center text-slate-500">
+            <p className="mb-2">고유번호: 311-82-79306 (올바른술문화연구소)</p>
             <p>© 2026 올바른 술문화 연구소. All rights reserved.</p>
           </div>
         </footer>
