@@ -1,0 +1,30 @@
+name: Deploy to NCP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.REMOTE_SSH_KEY }}
+          port: 4422
+          script: |
+            # 서버 접속 후 실행할 명령어
+            cd /var/www/sober-lab-web
+            git fetch --all
+            git reset --hard origin/main
+            npm install
+            npm run build
+            pm2 restart sober-lab || pm2 start npm --name "sober-lab" -- start

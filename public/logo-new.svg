@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#001F3F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E3A8A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bottleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#E2E8F0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path d="M 50 10 L 80 22 C 80 50 50 85 50 85 C 50 85 20 50 20 22 Z" fill="url(#shieldGrad)" />
+  <rect x="44" y="28" width="12" height="15" rx="2" fill="url(#bottleGrad)" />
+  <rect x="42" y="24" width="16" height="5" rx="1" fill="#F59E0B" />
+  <path d="M 44 43 L 34 53 L 34 75 C 34 77.2 35.8 79 38 79 L 62 79 C 64.2 79 66 77.2 66 75 L 66 53 L 56 43 Z" fill="url(#bottleGrad)" />
+  <rect x="47" y="55" width="6" height="14" rx="1" fill="#F59E0B" />
+  <rect x="43" y="59" width="14" height="6" rx="1" fill="#F59E0B" />
+</svg>
